@@ -7,7 +7,7 @@ import java.util.*
  */
 data class Task(
         val id: String = UUID.randomUUID().toString(),
-        val lastUpdate: Long,
+        val lastUpdate: Long = -1,
         val title: String = "New Task",
         val description: String = "",
         val completed: Boolean = false
