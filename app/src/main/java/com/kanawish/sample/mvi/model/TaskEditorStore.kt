@@ -11,7 +11,7 @@ import javax.inject.Singleton
 
 @SuppressLint("CheckResult")
 @Singleton class TaskEditorStore @Inject constructor(private val tasksModelStore: TasksModelStore) :
-        ModelStore<TaskEditorState>(TaskEditorState.Editing(Task())) {
+        ModelStore<TaskEditorState>(TaskEditorState.Closed) {
 
     init {
         // When extra processing is needed, we subscribe to our own state and react accordingly.
